@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gravações no YouTube — guia acessível</title>
+  <meta name="description"
+    content="Guia prático para gravar vídeos para o YouTube com acessibilidade: áudio, legendas, contraste, miniatura e descrição.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="limite">
+      <p class="olho">Guia prático</p>
+      <h1>Gravações no YouTube</h1>
+      <p class="resumo">
+        Como gravar e publicar vídeos que qualquer pessoa consiga assistir.<br />
+        Use a barra abaixo para mudar a página: o <strong>+</strong> aumenta a fonte e o <strong>-</strong>
+        diminui a fonte.
+      </p>
+      <nav aria-label="Seções do guia">
+        <ul>
+          <li><a href="#comecar">Começar</a></li>
+          <li><a href="#audio">Áudio e imagem</a></li>
+          <li><a href="#contraste">Contraste</a></li>
+          <li><a href="#miniatura">Miniatura</a></li>
+          <li><a href="#legendas">Legendas</a></li>
+          <li><a href="#teclado">Teclado</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+          <li><a href="#praticar">Praticar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="barra">
+    <div class="limite">
+      <label class="recolher">
+        <input type="checkbox" id="recolher">
+        <span class="quando-aberto">Recolher ferramentas</span>
+        <span class="quando-fechado">Mostrar ferramentas</span>
+      </label>
+
+      <div class="controles">
+        <fieldset>
+          <legend>Tamanho do texto</legend>
+          <div class="tamanho">
+            <button type="button" id="fonte-menos" aria-label="Diminuir texto">-</button>
+            <span id="fonte-valor" aria-live="polite">100%</span>
+            <button type="button" id="fonte-mais" aria-label="Aumentar texto">+</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contraste</legend>
+          <label class="opcao">
+            <input type="radio" name="tema" id="tema-padrao" checked>Padrão
+          </label>
+          <label class="opcao">
+            <input type="radio" name="tema" id="tema-escuro">Escuro
+          </label>
+          <label class="opcao">
+            <input type="radio" name="tema" id="tema-claro">Alto contraste
+          </label>
+          <label class="opcao">
+            <input type="radio" name="tema" id="tema-amarelo">Preto e amarelo
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Leitura</legend>
+          <label class="opcao">
+            <input type="checkbox" id="espaco">
+            Mais espaço entre as linhas
+          </label>
+          <label class="opcao">
+            <input type="checkbox" id="links">
+            Destacar links
+          </label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="limite">
+
+      <section id="comecar">
+        <h2>Gravando para o YouTube com acessibilidade</h2>
+        <p>
+          Um vídeo acessível é um vídeo que pode ser entendido por quem não ouve, não enxerga bem, usa só o teclado
+          ou assiste com som desligado no ônibus. Pensar nisso <strong>antes de apertar o REC</strong> é bem mais fácil
+          do que consertar depois.
+        </p>
+        <p>
+          No Brasil, a <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei Brasileira
+            de Inclusão (Lei nº 13.146/2015)</a> trata a acessibilidade como direito. As diretrizes internacionais são
+          as do <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a>, organizadas em quatro princípios:
+        </p>
+
+        <div class="grade">
+          <article>
+            <h3>Perceptível</h3>
+            <p>Dá para perceber o vídeo: áudio limpo, legendas, imagem com contraste e descrição do que aparece.</p>
+          </article>
+          <article>
+            <h3>Operável</h3>
+            <p>Dá para usar o player: o YouTube é controlável pelo teclado, e o seu site também precisa ser.</p>
+          </article>
+          <article>
+            <h3>Compreensível</h3>
+            <p>Dá para entender: fale devagar, use títulos claros e capítulos para organizar o vídeo.</p>
+          </article>
+          <article>
+            <h3>Robusto</h3>
+            <p>Funciona em vários dispositivos: celular, TV e leitor de tela. Use <code>iframe</code> com
+              <code>title</code> ao incorporar vídeos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="audio">
+        <h2>Áudio e imagem na gravação</h2>
+        <p>Antes de gravar, confira esta lista rápida:</p>
+        <ul class="lista">
+          <li><strong>Áudio primeiro:</strong> use um microfone próximo da boca e grave em lugar silencioso.</li>
+          <li><strong>Sem música alta</strong> por cima da fala: quem tem dificuldade de audição perde o conteúdo.</li>
+          <li><strong>Descreva o que mostra:</strong> em vez de "clique aqui", diga "clique no botão Salvar, no canto
+            superior direito".</li>
+          <li><strong>Evite flashes:</strong> piscadas rápidas (mais de 3 por segundo) podem causar crises em pessoas
+            com epilepsia fotossensível.</li>
+          <li><strong>Resolução 1080p</strong> ou mais, com a tela gravada em zoom suficiente para ler o texto.</li>
+        </ul>
+      </section>
+
+      <section id="contraste">
+        <h2>Contraste</h2>
+        <p>
+          Contraste é a diferença entre a cor do texto e a cor do fundo. No nível AA, o mais usado, texto comum precisa
+          de pelo menos <strong>4,5:1</strong> e texto grande (24px, ou 18px em negrito) precisa de <strong>3:1</strong>.
+          Isso vale para textos na tela do vídeo, slides e miniaturas.
+        </p>
+        <p>Mude o contraste na barra e role a página. As duas caixas abaixo mantêm as cores do exemplo, para comparar.</p>
+
+        <div class="lado-a-lado">
+          <figure class="amostra amostra-ruim">
+            <p>O contraste decide se isto pode ser lido.</p>
+            <figcaption>Fraco: cinza claro no branco, bem abaixo de 4,5:1.</figcaption>
+          </figure>
+          <figure class="amostra amostra-boa">
+            <p>O contraste decide se isto pode ser lido.</p>
+            <figcaption>Bom: texto escuro no branco, acima de 4,5:1.</figcaption>
+          </figure>
+        </div>
+
+        <p>
+          Cor sozinha não basta. "Os erros estão em vermelho" não serve para quem não distingue o vermelho. O correto é
+          escrever o erro e marcar o campo.
+        </p>
+      </section>
+
+      <section id="miniatura">
+        <h2>Miniatura com texto alternativo</h2>
+        <p>
+          O atributo <code>alt</code> descreve a imagem para quem usa leitor de tela. Ele também aparece no lugar da
+          imagem quando ela não carrega. Veja uma miniatura de vídeo de exemplo:
+        </p>
+        <figure>
+          <svg class="miniatura" viewBox="0 0 640 360" role="img"
+            aria-label="Miniatura de vídeo com fundo escuro, o título Como gravar sua tela em letras brancas grandes e um botão vermelho de play no centro">
+            <rect width="640" height="360" fill="#1a1a1a" />
+            <text x="320" y="110" text-anchor="middle" font-size="44" font-weight="700" fill="#ffffff"
+              font-family="Arial, sans-serif">Como gravar</text>
+            <text x="320" y="165" text-anchor="middle" font-size="44" font-weight="700" fill="#ffffff"
+              font-family="Arial, sans-serif">sua tela</text>
+            <rect x="260" y="205" width="120" height="84" rx="22" fill="#cc0000" />
+            <polygon points="305,225 305,269 345,247" fill="#ffffff" />
+          </svg>
+          <figcaption>
+            O texto alternativo desta miniatura diz o que ela mostra: "fundo escuro, título Como gravar sua tela em
+            letras brancas grandes e botão vermelho de play no centro."
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="legendas">
+        <h2>Legendas e transcrição</h2>
+        <p>
+          As legendas automáticas do YouTube ajudam, mas erram nomes, termos técnicos e sotaques. Sempre revise.
+        </p>
+        <ol class="lista">
+          <li>Publique o vídeo no <strong>YouTube Studio</strong>.</li>
+          <li>Abra <strong>Legendas</strong> e escolha o idioma (Português do Brasil).</li>
+          <li>Revise o texto gerado automaticamente ou envie um arquivo <code>.srt</code>.</li>
+          <li>Inclua sons importantes entre colchetes, como [aplausos] ou [música suave].</li>
+          <li>Cole a <strong>transcrição</strong> na descrição ou em uma página do seu site.</li>
+        </ol>
+        <p>Use também <strong>capítulos</strong> na descrição, com marcações de tempo, para quem quer pular direto ao
+          assunto:</p>
+        <pre><code>0:00 Introdução
+1:20 Configurando o microfone
+4:05 Gravando a tela
+8:40 Publicando e legendando</code></pre>
+      </section>
+
+      <section id="teclado">
+        <h2>Navegando pelo teclado</h2>
+        <p>O player do YouTube pode ser usado sem mouse. Alguns atalhos úteis:</p>
+        <div class="tabela-rolagem" tabindex="0" role="region" aria-label="Tabela de atalhos do YouTube">
+          <table>
+            <caption>Atalhos do player do YouTube</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tecla</th>
+                <th scope="col">O que faz</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row"><kbd>K</kbd> ou <kbd>Espaço</kbd></th><td>Pausar e continuar</td></tr>
+              <tr><th scope="row"><kbd>J</kbd> / <kbd>L</kbd></th><td>Voltar / avançar 10 segundos</td></tr>
+              <tr><th scope="row"><kbd>C</kbd></th><td>Ativar ou desativar legendas</td></tr>
+              <tr><th scope="row"><kbd>F</kbd></th><td>Tela cheia</td></tr>
+              <tr><th scope="row"><kbd>M</kbd></th><td>Silenciar</td></tr>
+              <tr><th scope="row"><kbd>Shift</kbd> + <kbd>,</kbd> / <kbd>.</kbd></th><td>Diminuir / aumentar a velocidade</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Pressione <kbd>Tab</kbd> nesta página: o foco sempre fica visível, em todos os temas de contraste.</p>
+      </section>
+
+      <section id="formulario">
+        <h2>Formulário: sugira um tema de vídeo</h2>
+        <p>Campos precisam de rótulo e as mensagens de erro precisam dizer o que corrigir.</p>
+
+        <form id="form-sugestao" novalidate>
+          <div class="campo">
+            <label for="nome">Seu nome <span class="obrigatorio">(obrigatório)</span></label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="erro-nome">
+            <p class="erro" id="erro-nome" hidden></p>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail <span class="obrigatorio">(obrigatório)</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="dica-email erro-email">
+            <p class="dica" id="dica-email">Exemplo: nome@exemplo.com</p>
+            <p class="erro" id="erro-email" hidden></p>
+          </div>
+
+          <div class="campo">
+            <label for="tema-video">Tipo de gravação</label>
+            <select id="tema-video" name="tema-video">
+              <option>Gravação de tela</option>
+              <option>Tutorial com câmera</option>
+              <option>Podcast em vídeo</option>
+              <option>Transmissão ao vivo</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Sua ideia</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="botao">Enviar sugestão</button>
+          <p id="status-form" role="status"></p>
+        </form>
+      </section>
+
+      <section id="praticar">
+        <h2>Praticar</h2>
+        <p>Antes de publicar seu próximo vídeo, marque cada item:</p>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> O áudio está claro e sem ruído de fundo.</label></li>
+          <li><label><input type="checkbox"> Textos na tela têm contraste de pelo menos 4,5:1.</label></li>
+          <li><label><input type="checkbox"> Narrei o que aparece na tela.</label></li>
+          <li><label><input type="checkbox"> Revisei as legendas.</label></li>
+          <li><label><input type="checkbox"> A miniatura é legível e a descrição tem capítulos.</label></li>
+          <li><label><input type="checkbox"> Não há flashes rápidos.</label></li>
+        </ul>
+        <p id="progresso" role="status">0 de 6 itens concluídos.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="limite">
+      <p>Página de aula sobre acessibilidade aplicada a gravações no YouTube.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
