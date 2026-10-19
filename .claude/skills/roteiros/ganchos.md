@@ -1,0 +1,25 @@
+# 21 modelos de gancho
+
+Troque os colchetes pelo tema do vídeo.
+
+1. Resultado + prova: "Testei [N] [coisas] no meu canal e o resultado me surpreendeu."
+2. Erro comum: "Se você [faz X], está perdendo [Y]."
+3. "Não faça [X]": "Não faça [X] antes de ver isso."
+4. Número específico: "[N] coisas que eu aprendi [fazendo X] por [tempo]."
+5. Pergunta de dor: "Por que o seu [X] não [resultado]?"
+6. Contraste: "[Todo mundo] faz X. Os que crescem fazem Y."
+7. Segredo: "O que ninguém te conta sobre [X]."
+8. Antes e depois: "Saí de [A] para [B] em [tempo]. Foi assim."
+9. Desafio: "Fiquei [tempo] só [fazendo X]. Olha o que aconteceu."
+10. Pergunta "vale a pena?": "[X] vale a pena em [ano]?"
+11. Atalho: "Como [resultado] sem [esforço/custo comum]."
+12. Aviso: "Pare de [X]. Eu explico por quê."
+13. História curta: "Semana passada [algo inesperado] aconteceu comigo."
+14. Comparação: "[X] vs [Y]: só um vale o seu tempo."
+15. Autoridade: "Depois de [N] vídeos, descobri que [X]."
+16. Curiosidade aberta: "Tem um detalhe em [X] que muda tudo."
+17. Reação: "Reagi a [X] e fiquei chocado."
+18. Previsão: "Isso vai mudar [área] nos próximos [tempo]."
+19. Lista rápida: "Em [N] minutos você vai saber [X]."
+20. Provocação: "Você está usando [X] errado."
+21. Um dia como: "1 dia usando só [X]."
